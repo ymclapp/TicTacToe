@@ -26,14 +26,16 @@ namespace Lab04_TicTacToe.Classes
         //Console.Write("||");
         for (int j = 0; j < GameBoard.GetLength(1); j++)
         {
-          if ((j + 1) % 3 == 0)
-            Console.Write($"|{GameBoard[i, j]}|\n");
-          else
-            Console.Write($"|{GameBoard[i, j]}|");
+          string tttBoard = GameBoard[i, j];
+          //if ((j + 1) % 3 == 0)
+            //Console.Write($"|{GameBoard[i, j]}|\n");
+          //else
+            Console.Write($"| {tttBoard} || {tttBoard} || {tttBoard} |");
 
         }
         //Console.WriteLine();
         //Console.Write($"{GameBoard[0, 0]} | {GameBoard[0, 1]} | {GameBoard[1, 02]} \n");
+        //Console.Write($"| {tttBoard} || {tttBoard} || {tttBoard} |");
       }
 
     }
